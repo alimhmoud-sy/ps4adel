@@ -16,6 +16,7 @@
       <button class="menu-btn" id="generate-cache-btn">Force-Cache</button>
       <button class="menu-btn" id="update-exploit">Update-Exploit</button>
       <button onclick="showsettings()" class="menu-btn" id="settings-btn">Settings</button>
+      <button onclick="showabout()" class="menu-btn" id="about-btn">About</button>
     </div>
 
     <div class="header">
@@ -124,7 +125,32 @@
       <h3>Debug Console</h3>
     
       <div class="console" style="padding: 20px;"><pre id='console'></pre></div>
-   
+    </div>
+    
+
+    <!-- About Popup -->
+    <div class="overlay" id="overlay-popup"></div>
+    <div class="popup" id="about-popup">
+      <h2>About PSFree</h2>
+      <div>
+        <p>Version: 1.5.1</p>
+        <p>A simple web interface for PS4 jailbreak.</p>
+      </div>
+      <div class="credits">
+        <h3>Credits</h3>
+        <div class="credits-container">
+          <a href="https://github.com/Al-Azif" target="_blank">Al-Azif</a>
+          <a href="https://github.com/kmeps4" target="_blank">kmeps4</a>
+          <a href="https://github.com/GoldHEN" target="_blank">GoldHEN</a>
+          <a href="https://github.com/Scene-Collective" target="_blank">Scene-Collective</a>
+          <a href="https://github.com/ps4boot" target="_blank">ps4boot</a>
+          <a href="https://github.com/SiSTR0" target="_blank">SiSTR0</a>
+          <a href="https://github.com/EchoStretch" target="_blank">EchoStretch</a>
+          <a href="https://github.com/Nazky" target="_blank">Nazky</a>
+        </div>
+      </div>
+      <button onclick="closeabout()" class="close-btn" id="close-about"></button>
+    </div>
 
     <!-- Settings Popup -->
     <div class="overlay" id="overlay-popup"></div>
